@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>pattern.strategy.refactoring.service.SwordAttackStrategy</OriginalElement>
+  <nodes>
+    <node x="140.3041208791209" y="216.0">pattern.strategywithfactory.factory.AttackStrategyFactory</node>
+    <node x="216.0" y="113.0">pattern.strategy.refactoring.service.GunAttackStrategy</node>
+    <node x="411.7453296703296" y="0.0">pattern.strategy.refactoring.service.AttackStrategy</node>
+    <node x="345.88681318681313" y="341.0">pattern.strategywithfactory.service.ActionService</node>
+    <node x="403.0" y="113.0">pattern.strategy.refactoring.service.SwordAttackStrategy</node>
+    <node x="0.0" y="113.0">pattern.strategy.refactoring.service.DefaultAttackStrategy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="pattern.strategy.refactoring.service.DefaultAttackStrategy" target="pattern.strategy.refactoring.service.AttackStrategy">
+      <point x="0.0" y="-26.5" />
+      <point x="97.5" y="73.0" />
+      <point x="422.17390109890107" y="73.0" />
+      <point x="-62.571428571428555" y="26.5" />
+    </edge>
+    <edge source="pattern.strategy.refactoring.service.SwordAttackStrategy" target="pattern.strategy.refactoring.service.AttackStrategy">
+      <point x="0.0" y="-26.5" />
+      <point x="493.5" y="93.0" />
+      <point x="484.7453296703296" y="93.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="pattern.strategy.refactoring.service.GunAttackStrategy" target="pattern.strategy.refactoring.service.AttackStrategy">
+      <point x="0.0" y="-26.5" />
+      <point x="299.5" y="93.0" />
+      <point x="463.88818681318673" y="93.0" />
+      <point x="-20.85714285714289" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="292.0" y="219.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

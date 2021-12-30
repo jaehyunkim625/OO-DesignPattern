@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>pattern.staticfactorymethod.refactoring.service.FoodService</OriginalElement>
+  <nodes>
+    <node x="0.0" y="113.0">pattern.staticfactorymethod.Fish</node>
+    <node x="240.05" y="341.0">pattern.staticfactorymethod.refactoring.service.FoodService</node>
+    <node x="103.33333333333337" y="216.0">pattern.staticfactorymethod.FoodFactory</node>
+    <node x="102.0" y="113.0">pattern.staticfactorymethod.Vegetable</node>
+    <node x="240.0" y="113.0">pattern.staticfactorymethod.Meat</node>
+    <node x="259.09333333333336" y="0.0">pattern.staticfactorymethod.Food</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="pattern.staticfactorymethod.refactoring.service.FoodService" target="pattern.staticfactorymethod.FoodFactory">
+      <point x="-47.75" y="-26.5" />
+      <point x="287.8" y="316.0" />
+      <point x="238.83333333333337" y="316.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="pattern.staticfactorymethod.FoodFactory" target="pattern.staticfactorymethod.Vegetable">
+      <point x="-54.19999999999999" y="-37.5" />
+      <point x="184.63333333333338" y="196.0" />
+      <point x="161.0" y="196.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="pattern.staticfactorymethod.Fish" target="pattern.staticfactorymethod.Food">
+      <point x="0.0" y="-26.5" />
+      <point x="41.0" y="73.0" />
+      <point x="269.51000000000005" y="73.0" />
+      <point x="-52.083333333333314" y="26.5" />
+    </edge>
+    <edge source="pattern.staticfactorymethod.Meat" target="pattern.staticfactorymethod.Food">
+      <point x="0.0" y="-26.5" />
+      <point x="284.0" y="93.0" />
+      <point x="311.1766666666667" y="93.0" />
+      <point x="-10.416666666666686" y="26.5" />
+    </edge>
+    <edge source="pattern.staticfactorymethod.Vegetable" target="pattern.staticfactorymethod.Food">
+      <point x="0.0" y="-26.5" />
+      <point x="161.0" y="83.0" />
+      <point x="290.34333333333336" y="83.0" />
+      <point x="-31.25" y="26.5" />
+    </edge>
+    <edge source="pattern.staticfactorymethod.FoodFactory" target="pattern.staticfactorymethod.Fish">
+      <point x="-108.39999999999998" y="-37.5" />
+      <point x="130.4333333333334" y="196.0" />
+      <point x="41.0" y="196.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="pattern.staticfactorymethod.refactoring.service.FoodService" target="pattern.staticfactorymethod.Food">
+      <point x="47.75" y="-26.5" />
+      <point x="383.3" y="316.0" />
+      <point x="387.5716666666667" y="316.0" />
+      <point x="387.5716666666667" y="93.0" />
+      <point x="373.6766666666667" y="93.0" />
+      <point x="52.08333333333332" y="26.5" />
+    </edge>
+    <edge source="pattern.staticfactorymethod.FoodFactory" target="pattern.staticfactorymethod.Food">
+      <point x="108.40000000000003" y="-37.5" />
+      <point x="347.2333333333334" y="196.0" />
+      <point x="365.53833333333336" y="196.0" />
+      <point x="365.53833333333336" y="83.0" />
+      <point x="352.84333333333336" y="83.0" />
+      <point x="31.250000000000007" y="26.5" />
+    </edge>
+    <edge source="pattern.staticfactorymethod.FoodFactory" target="pattern.staticfactorymethod.Meat">
+      <point x="0.0" y="-37.5" />
+      <point x="238.83333333333337" y="196.0" />
+      <point x="284.0" y="196.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="164.0" y="187.0" />
+  <SelectedNodes>
+    <node>pattern.staticfactorymethod.refactoring.service.FoodService</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
