@@ -1,8 +1,8 @@
-package pattern.staticfactorymethod;
+package pattern.staticfactorymethod.refactoring.service;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import pattern.strategy.before.service.ActionService;
+import pattern.staticfactorymethod.*;
 
 import java.util.HashMap;
 import java.util.Map;
