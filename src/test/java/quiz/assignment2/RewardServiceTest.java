@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class RewardServiceTest {
 
     @Test
-    @DisplayName("패턴적용전 도메인 서비스 테스트")
+    @DisplayName("패턴적용전 도메인 서비스 테스트 - Gold level/Slack Noti/Event applied")
     void saveGoldWithSlack() {
         LogCaptor logCaptor = LogCaptor.forRoot();
         //given
@@ -43,7 +43,7 @@ class RewardServiceTest {
     }
 
     @Test
-    @DisplayName("패턴적용전 도메인 서비스 테스트")
+    @DisplayName("패턴적용전 도메인 서비스 테스트 - Green level/e-mail Noti/No event applied")
     void saveGreenWithEmail() {
         LogCaptor logCaptor = LogCaptor.forRoot();
         //given
@@ -69,7 +69,7 @@ class RewardServiceTest {
         assertThat(actualResult).containsAll(expectedResult);
     }
     @Test
-    @DisplayName("패턴적용전 도메인 서비스 테스트")
+    @DisplayName("패턴적용전 도메인 서비스 테스트 - Welcome level/No favoraite noti/No event applied")
     void saveWelcomeWithMMS() {
         LogCaptor logCaptor = LogCaptor.forRoot();
         //given
@@ -95,7 +95,7 @@ class RewardServiceTest {
         assertThat(actualResult).containsAll(expectedResult);
     }
     @Test
-    @DisplayName("패턴적용전 도메인 서비스 테스트")
+    @DisplayName("패턴적용전 도메인 서비스 테스트 - Welcome level/post mail Noti/Event applied")
     void saveWelcomeWithPostmail() {
         LogCaptor logCaptor = LogCaptor.forRoot();
         //given
