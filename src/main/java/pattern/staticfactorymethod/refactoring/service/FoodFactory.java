@@ -4,12 +4,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import pattern.staticfactorymethod.*;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.EnumMap;
 
 public class FoodFactory {
     private static final Logger LOGGER = LogManager.getLogger(FoodFactory.class.getName());
-    private static final Map<FoodType, Food> foods = new HashMap<>();
+    private static final EnumMap<FoodType, Food> foods = new EnumMap<>(FoodType.class);
     // 보통은 if-else or Swith로 코드별 해당 ConcreteClass를 생성하겠지만
     // 객체(ConcreteClass)가 Immutable하다면, 미리 캐시하여 Costy한 new instance를 skip
     // Singleton Pattern을 통해 미리 생성된 객체를 반환하여 오버헤드를 줄임
@@ -39,7 +38,7 @@ public class FoodFactory {
             default:
                 throw new IllegalStateException("Unexpected value: " + foodType);
         }
-        LOGGER.info(food.getName() + " has been created...");
+        LOGGER.info("{} has been created...", food.getName());
         return food;
     }
 }

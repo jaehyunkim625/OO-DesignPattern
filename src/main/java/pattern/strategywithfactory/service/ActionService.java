@@ -3,8 +3,6 @@ package pattern.strategywithfactory.service;
 import pattern.strategy.WeaponType;
 import pattern.strategy.refactoring.service.AttackStrategy;
 import pattern.strategy.refactoring.service.DefaultAttackStrategy;
-import pattern.strategy.refactoring.service.GunAttackStrategy;
-import pattern.strategy.refactoring.service.SwordAttackStrategy;
 import pattern.strategywithfactory.factory.AttackStrategyFactory;
 
 // Context

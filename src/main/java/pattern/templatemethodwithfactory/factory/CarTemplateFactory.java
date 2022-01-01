@@ -5,12 +5,11 @@ import pattern.templatemethod.refactoring.service.BlueCar;
 import pattern.templatemethod.refactoring.service.CarTemplate;
 import pattern.templatemethod.refactoring.service.RedCar;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.EnumMap;
 
 public class CarTemplateFactory {
 
-    private static final Map<CarColorType, CarTemplate> carTemplates = new HashMap<>();
+    private static final EnumMap<CarColorType, CarTemplate> carTemplates = new EnumMap<>(CarColorType.class);
 
     // 보통은 if-else or Swith로 코드별 해당 ConcreteClass를 생성하겠지만
     // 객체(ConcreteClass)가 Immutable하다면, 미리 캐시하여 Costy한 new instance를 skip

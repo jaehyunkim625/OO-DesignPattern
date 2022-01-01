@@ -22,7 +22,7 @@ public class FoodService {
             default:
                 throw new IllegalStateException("Unexpected value: " + foodType);
         }
-        LOGGER.info(food.getName() + " has been created...");
+        LOGGER.info("{} has been created...", food.getName());
         return food;
     }
 }
