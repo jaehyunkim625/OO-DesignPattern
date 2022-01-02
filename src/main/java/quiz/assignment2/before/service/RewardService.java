@@ -12,6 +12,7 @@ public class RewardService {
     public static final boolean OFF_EVENT = false;
     public static final boolean ON_EVENT = true;
 
+    // Business logics are represented as just logging in this practice scenario
     public void save(Member member, int rewardPoint, boolean onEvent) {
         LOGGER.debug("[START] Saving reward point...");
 
