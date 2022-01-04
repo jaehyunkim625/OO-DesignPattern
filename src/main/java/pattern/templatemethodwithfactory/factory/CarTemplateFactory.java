@@ -11,17 +11,19 @@ public class CarTemplateFactory {
 
     private static final EnumMap<CarColorType, CarTemplate> carTemplates = new EnumMap<>(CarColorType.class);
 
+    private CarTemplateFactory() {}
+
     // 보통은 if-else or Swith로 코드별 해당 ConcreteClass를 생성하겠지만
     // 객체(ConcreteClass)가 Immutable하다면, 미리 캐시하여 Costy한 new instance를 skip
     static {
         carTemplates.put(CarColorType.BLUE, new BlueCar());
         carTemplates.put(CarColorType.RED, new RedCar());
     }
-    public static CarTemplate getImutableInstance(CarColorType color) {
+    public static CarTemplate getInstance(CarColorType color) {
         return carTemplates.get(color);
     }
 
-    public static CarTemplate getInstance(CarColorType color) {
+    public static CarTemplate newInstance(CarColorType color) {
         CarTemplate template;
         switch (color) {
             case BLUE:

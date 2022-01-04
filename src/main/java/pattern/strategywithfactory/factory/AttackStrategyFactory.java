@@ -14,6 +14,9 @@ import java.util.EnumMap;
  */
 public class AttackStrategyFactory {
     private static final EnumMap<WeaponType, AttackStrategy> attackStrategies = new EnumMap<>(WeaponType.class);
+
+    private AttackStrategyFactory() {}
+
     // 보통은 if-else or Swith로 코드별 해당 ConcreteClass를 생성하겠지만
     // 객체(ConcreteClass)가 Immutable하다면, 미리 캐시하여 Costy한 new instance를 skip
     // Singleton Pattern을 통해 미리 생성된 객체를 반환하여 오버헤드를 줄임
@@ -22,12 +25,12 @@ public class AttackStrategyFactory {
         attackStrategies.put(WeaponType.SWORD, new SwordAttackStrategy());
         attackStrategies.put(WeaponType.PUNCH, new DefaultAttackStrategy());
     }
-    public static AttackStrategy getImmutableInstance(WeaponType weaponType) {
+    public static AttackStrategy getInstance(WeaponType weaponType) {
         // 인스턴스생성시 일련의 과정 (룰,순서등)이 존재한다면, templatemethod 패턴의 활용을 검토.
         return attackStrategies.get(weaponType);
     }
 
-    public static AttackStrategy getInstance(WeaponType weaponType) {
+    public static AttackStrategy newInstance(WeaponType weaponType) {
         AttackStrategy strategy;
         switch (weaponType) {
             case GUN:
