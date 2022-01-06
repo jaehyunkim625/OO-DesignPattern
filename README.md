@@ -5,7 +5,7 @@ Workshop materials
 ### 디자인패턴? 그 전에 앞서, 잠깐 SOLID란? (디자인패턴은 SOLID원칙을 구체화하는 방법론? 아니면 결과물?)
 
 ##### SRP: One Class One Responsibility? One Domain One Responsibility! Domain should be easily readable.
-##### OCP: Should be Extend a Classes Behavior withoout Modifying it (feat. Polymorphism). Code also should have Agility.
+##### OCP: Should be Extend a Classes Behavior without Modifying it (feat. Polymorphism). Code also should have Agility.
 - 변화를 막을 수 있는 사람은 아무도 없고, 다만 변화에 적절히 대응 할 수 있어야한다.
 ##### DIP: High level modules should Not depend upon low level modules. Both should depend upon Abstractions.
 
