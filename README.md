@@ -21,4 +21,8 @@ Workshop materials
 #### * Critical Point: 간혹 스트래티지패턴은 Interface, 템플릿메소드패턴은 Abstract로 만 추상화를 구현한다고 생각할 경우도 있습니다.
 #### 하지만, 어디까지나 도메인모델에서 디자인패턴이란 개념적으로 접근가능하고, 기술적으로 abstract로 구현하느냐, interface로 구현하느냐는 관심이 없으며, 둘 중 무엇으로 구현해도 개념적으로는 같다.
 #### 중요한 것은 SOLID원칙과 Hexgonal Architecture (feat. OCP/DIP) 를 항상 머리속에 염두해 두고, 도메인모델 or 도메인서비스단에서 분기하는 로직을 덜어 최대한 도메인의 핵심로직만을 포커스할 수 있도록 설계하고, 도메인외부로의 종속성(e.g. Dependency of Infrastructure)을 없애기 위하여 추상화(abstract or interface)클래스만을 사용하도록 (feat. factory패턴) 설계하는 것 입니다.
+#### 또한, 이 부분에선 Anti-Pattern(Anemic Domain Model)을 염두하여, 가능한 도메인모델(Aggregate,Entity,VO)이 비즈니스핵심로직을 표현하도록 하면서, 유연하고 유지보수가 쉽도록 (이 경우 주로 패턴을 활용할 수 있음) 도메인서비스영역또한 활용하여 설계하는 것 입니다.
 #### 인터페이스는 가능하면 변경되어서는 안됩니다. 과도한 예측은 불필요한 작업을 만들기에, 적절한 수준의 예측능력이 필요하므로, 개발자에겐 '예지력'이 필요하다.
+
+### _GoF DesignPattern Relationship_
+![GoF-DesignPattern-Relationshiip](./src/main/resources/img/GoF_Design_pattern_relation.gif)
