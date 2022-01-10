@@ -26,7 +26,7 @@ class TemplateMethodPatternTest {
         expectedResult.add("Engine built...");
         expectedResult.add("Paint Red...");
         List<String> actualResult = logCaptor.getInfoLogs();
-        assertThat(actualResult).containsAll(expectedResult);
+        assertThat(actualResult).containsExactlyElementsOf(expectedResult);
     }
 
     @Test
@@ -44,7 +44,7 @@ class TemplateMethodPatternTest {
         expectedResult.add("Engine built...");
         expectedResult.add("Paint Red...");
         List<String> actualResult = logCaptor.getInfoLogs();
-        assertThat(actualResult).containsAll(expectedResult);
+        assertThat(actualResult).containsExactlyElementsOf(expectedResult);
     }
 
     @Test
@@ -62,6 +62,6 @@ class TemplateMethodPatternTest {
         expectedResult.add("Engine built...");
         expectedResult.add("Paint Red...");
         List<String> actualResult = logCaptor.getInfoLogs();
-        assertThat(actualResult).containsAll(expectedResult);
+        assertThat(actualResult).containsExactlyElementsOf(expectedResult);
     }
 }

@@ -25,7 +25,7 @@ class StrategyPatternTest {
         final List<String> expectedResult = new ArrayList<>();
         expectedResult.add("Attack Gun!");
         List<String> actualResult = logCaptor.getInfoLogs();
-        assertThat(actualResult).containsAll(expectedResult);
+        assertThat(actualResult).containsExactlyElementsOf(expectedResult);
     }
 
     @Test
@@ -42,7 +42,7 @@ class StrategyPatternTest {
         final List<String> expectedResult = new ArrayList<>();
         expectedResult.add("Attack Gun!");
         List<String> actualResult = logCaptor.getInfoLogs();
-        assertThat(actualResult).containsAll(expectedResult);
+        assertThat(actualResult).containsExactlyElementsOf(expectedResult);
     }
 
     @Test
@@ -59,6 +59,6 @@ class StrategyPatternTest {
         final List<String> expectedResult = new ArrayList<>();
         expectedResult.add("Attack Gun!");
         List<String> actualResult = logCaptor.getInfoLogs();
-        assertThat(actualResult).containsAll(expectedResult);
+        assertThat(actualResult).containsExactlyElementsOf(expectedResult);
     }
 }

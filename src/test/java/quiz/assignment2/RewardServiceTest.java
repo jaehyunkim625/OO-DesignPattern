@@ -39,7 +39,7 @@ class RewardServiceTest {
         expectedResult.add("4. 리워드적립결과를 회원에게 Notify한다");
         expectedResult.add("Send saving reward point result notification via slack");
         List<String> actualResult = logCaptor.getInfoLogs();
-        assertThat(actualResult).containsAll(expectedResult);
+        assertThat(actualResult).containsExactlyElementsOf(expectedResult);
     }
 
     @Test
@@ -66,7 +66,7 @@ class RewardServiceTest {
         expectedResult.add("4. 리워드적립결과를 회원에게 Notify한다");
         expectedResult.add("Send saving reward point result notification via e-mail");
         List<String> actualResult = logCaptor.getInfoLogs();
-        assertThat(actualResult).containsAll(expectedResult);
+        assertThat(actualResult).containsExactlyElementsOf(expectedResult);
     }
     @Test
     @DisplayName("패턴적용전 도메인 서비스 테스트 - Welcome level/No favoraite noti/No event applied")
@@ -92,7 +92,7 @@ class RewardServiceTest {
         expectedResult.add("4. 리워드적립결과를 회원에게 Notify한다");
         expectedResult.add("Send saving reward point result notification via MMS");
         List<String> actualResult = logCaptor.getInfoLogs();
-        assertThat(actualResult).containsAll(expectedResult);
+        assertThat(actualResult).containsExactlyElementsOf(expectedResult);
     }
     @Test
     @DisplayName("패턴적용전 도메인 서비스 테스트 - Welcome level/post mail Noti/Event applied")
@@ -118,7 +118,7 @@ class RewardServiceTest {
         expectedResult.add("4. 리워드적립결과를 회원에게 Notify한다");
         expectedResult.add("Send saving reward point result notification via post mail");
         List<String> actualResult = logCaptor.getInfoLogs();
-        assertThat(actualResult).containsAll(expectedResult);
+        assertThat(actualResult).containsExactlyElementsOf(expectedResult);
     }
 
     private Member getSampleGoldMember() {
